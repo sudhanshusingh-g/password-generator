@@ -36,12 +36,12 @@ function App() {
       <h1 className="text-center py-8 my-4 text-4xl text-white">
         Password Generator
       </h1>
-      <div className="p-4 white shadow-lg rounded-lg text-center flex flex-wrap flex-col">
+      <div className="p-4 white shadow-lg rounded-lg flex flex-wrap flex-col ">
         <div className="flex flex-wrap justify-center w-full">
           <input
             type="text"
             value={password}
-            className="outline-none rounded-l-sm p-4 w-1/4"
+            className="outline-none rounded-l-sm p-2"
             placeholder="Password"
             readOnly
             ref={passwordRef}
@@ -54,8 +54,8 @@ function App() {
           </button>
         </div>
 
-        <div className="flex flex-wrap text-white justify-center my-4 p-3 gap-4 items-center">
-          <div className="flex flex-wrap justify-center gap-1 items-center">
+        <div className="flex flex-wrap text-white justify-start my-4  p-3 gap-2 items-center flex-col">
+          <div className="flex flex-wrap justify-center gap-2 items-center">
             <input
               type="range"
               min={6}
@@ -68,7 +68,7 @@ function App() {
             />
             <label className="text-slate-500">Length : {length}</label>
           </div>
-          <div className="flex flex-wrap gap-1 text-slate-500">
+          <div className="flex flex-wrap gap-3 text-slate-500">
             <input
               type="checkbox"
               defaultChecked={isNumber}
@@ -78,7 +78,7 @@ function App() {
             />
             <label>Number</label>
           </div>
-          <div className="flex flex-wrap gap-1 text-slate-500">
+          <div className="flex flex-wrap gap-2 text-slate-500">
             <input
               type="checkbox"
               defaultChecked={isCharacter}
